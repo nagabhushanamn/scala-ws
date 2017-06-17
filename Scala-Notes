@@ -1,0 +1,193 @@
+
+
+Scala stands for “scalable language.”
+
+    - It was designed to grow with the demands of its users
+
+    - You can apply Scala to a wide range of programming tasks, 
+      from writing small scripts to building large systems
+
+-Runs on the standard Java platform and interoperates seamlessly with all Java libraries. 
+
+-Technically, Scala is a blend of object-oriented 
+ and functional programming concepts in a statically typed language.
+
+-The two programming styles have complementary strengths when it comes to scalability.
+
+    - Scala’s functional programming constructs make it easy 
+      to build interesting things quickly from simple parts
+
+    - Its object-oriented constructs make it easy 
+      to structure larger systems and adapt them to new demands
+
+- The combination of both styles in Scala makes it possible 
+  to express new kinds of programming patterns and component abstractions.
+
+
+ " It also leads to a legible and concise programming style. "
+
+
+ -----------------------------------------------------------------------------
+
+
+ 1. A language that grows on you
+
+
+    var capital = Map("US" -> "Washington", "France" -> "Paris")
+    capital += ("Japan" -> "Tokyo")
+    println(capital("France"))
+
+
+    - This example shows that Scala can give you both convenience and flexibility.
+
+    -----------------------------------------------------------------------------
+
+    Growing new types:-
+
+     def factorial(x: BigInt): BigInt =
+        if (x == 0) 1 else x * factorial(x - 1)
+
+       factorial(30)  ==>   265252859812191058636308480000000
+
+
+      -> BigInt, type - by wrapping Java’s class java.math.BigInteger
+
+
+        same code with Java's class
+
+        import java.math.BigInteger
+        def factorial(x: BigInteger): BigInteger =
+            if (x == BigInteger.ZERO)
+            BigInteger.ONE
+        else
+            x.multiply(factorial(x.subtract(BigInteger.ONE)))
+
+     ---------------------------------------------------------------------------------------       
+
+     Growing new control constructs
+
+
+        - Java comes with a rich, thread-based concurrency library. 
+          Scala programs can use it like any other Java API
+
+          However,
+
+        - Akka, a Scala API for “actor-based” concurrent programming.
+        - Akka is an additional Scala library that implements an actor model similar to Erlang’s.
+
+        - Actors are concurrency abstractions that can be implemented on top of threads
+        - An actor can perform two basic operations, message send and receive. 
+
+        sending actor
+        --------------
+
+            recipient ! msg
+
+
+        receiving actor
+        ---------------    
+
+        def receive = {
+            case Msg1 => ... // handle Msg1
+            case Msg2 => ... // handle Msg2
+            // ...
+        }    
+
+
+        you can “grow” the Scala language in new directions even as specialized as concurrent programming. 
+
+
+     ---------------------------------------------------------------------------------------
+
+
+     Scalability  ==> 
+
+      - ranging from syntax details to component abstraction constructs.
+
+     ---------------------------------------------------------------------------------------
+
+
+     What makes Scala scalable?
+
+
+        in Scala a function value is an object. Function types are classes that can be inherited by subclasses. 
+
+
+
+      -> Scala is object-oriented  
+      
+            - provides structure
+            - objects as containers
+
+            issue
+                - the same techniques apply to the construction of small as well as large programs.  
+                - as the primitive val- ues in Java.
+
+
+          - scala is an object-oriented language in pure form
+
+             For example, when you say 1 + 2 in Scala, 
+             you are actually invoking a method named + defined in class Int.
+
+
+
+       -> Scala is functional  
+
+            - functions are first-class values
+            - You can pass functions as arguments to other functions, 
+              return them as results from functions,
+              or store them in variables.
+
+            - You can also define a function inside another function, 
+              just as you can define an integer value inside a function  
+
+            - functions need to pure 
+
+            - Functional languages encourage immutable data structures and referentially transparent methods.  
+
+    ---------------------------------------------------------------------------------------
+
+    Why Scala?      
+
+
+        - Scala is compatible
+        - Scala is concise
+
+                // this is Java
+                class MyClass {
+                    private int index;
+                    private String name;
+                    public MyClass(int index, String name) {
+                                this.index = index;
+                                this.name = name;
+                    } 
+                }   
+
+                In Scala, you would likely write this instead:
+                class MyClass(index: Int, name: String)
+
+          - Scala is high-level
+
+
+                boolean nameHasUpperCase = false;  // this is Java
+                for (int i = 0; i < name.length(); ++i) {
+                    if (Character.isUpperCase(name.charAt(i))) {
+                        nameHasUpperCase = true;
+                        break;
+                } }  
+
+                Whereas in Scala, you could write this:
+                val nameHasUpperCase = name.exists(_.isUpper)
+
+
+                Clearly the Scala code is much shorter and
+            
+                ---easier to understand than the Java code
+
+            - Scala is statically typed
+
+
+                    - Verifiable properties.
+                    - Safe refactorings.
+                    - Documentation
+                    - 
