@@ -1,0 +1,25 @@
+compile
+run
+target
+help
+package
+run
+scala
+console
+~package
+~run
+exit
+compile
+run
+Person1{
+  val firstName="Nag";
+  val lastName="N";
+  val age=32;
+  def fullName:String=firstName+"-"+lastName;
+  def sayName(): String ={
+    fullName
+  }
+  
+}
+run
+test
