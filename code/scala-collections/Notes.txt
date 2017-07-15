@@ -1,0 +1,11 @@
+
+
+collections => data-structures
+
+
+ -> Immutable & mutable
+ -> Eager & delayed(streams) evaluation
+ -> sequential and parallel(fork & join) evaluation
+ 
+ 
+ //-----------------------------------

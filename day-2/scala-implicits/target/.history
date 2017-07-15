@@ -1,0 +1,10 @@
+compile
+package
+run
+run-main Hello
+run-main Test
+sbt
+compile
+pacjafe
+package
+run

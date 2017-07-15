@@ -1,0 +1,59 @@
+
+Scala with SBT   +  Eclipse IDE
+
+--------------------------------------------------------------------------
+
+1. install sbt
+
+2. add sbteclise plugin. : ref https://github.com/typesafehub/sbteclipse ( if we use eclipse )
+
+3. create project dir
+
+4. create build.sbt
+
+5. all scala filae must be in 'src/main/scala'
+
+
+--------------------------------------------------------------------------
+
+
+
+implicit
+
+
+	a. implicit types
+	b. implicit views   ==> for type conversion
+	
+	
+----------------------------------------------------------------------
+
+
+Implicit Resolution ( finding implicit types/views at compile time )
+
+
+ lookup mechanism
+ 
+ 
+  -> local scope
+  -> parent scope ( missing )
+  -> explicit imports
+  -> wildcard imports
+  -> external scala-file with same package dec
+  -> companion types
+  -> Nested objects
+  -> package objects
+  
+   .....
+  
+  
+  
+  
+  
+  	
+	
+	
+	
+	
+	
+	
+

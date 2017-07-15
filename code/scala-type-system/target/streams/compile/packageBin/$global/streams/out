@@ -1,0 +1,11 @@
+[0m[[0minfo[0m] [0mPackaging /Users/Training/eclipse-workspace/scala-learn/sbt-scala-app/target/scala-2.11/scala-learn_2.11-1.0.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	Hello$.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Training/eclipse-workspace/scala-learn/sbt-scala-app/target/scala-2.11/classes/Hello$.class[0m
+[0m[[0mdebug[0m] [0m	Hello.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Training/eclipse-workspace/scala-learn/sbt-scala-app/target/scala-2.11/classes/Hello.class[0m
+[0m[[0mdebug[0m] [0m	Test$.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Training/eclipse-workspace/scala-learn/sbt-scala-app/target/scala-2.11/classes/Test$.class[0m
+[0m[[0mdebug[0m] [0m	Test.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Training/eclipse-workspace/scala-learn/sbt-scala-app/target/scala-2.11/classes/Test.class[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m
